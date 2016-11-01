@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+void main(void)
+
+{
+
+int fivecent, tencent, twentycent, fiftycent;
+float amount;
+printf("Enter number of 5cent and 10cent coins\n");
+scanf("%d%d", &fivecent, &tencent);
+printf("Enter number of 20cent coins\n");
+scanf("%d", &twentycent);
+printf("Enter number of 50cent coins\n");
+scanf("%d", &fiftycent);
+amount = (5 * fivecent + 10 * tencent + 20 * twentycent + 50 * fiftycent)/100.0;
+printf("Total amount is $%.2f \n", amount);
+
+}
