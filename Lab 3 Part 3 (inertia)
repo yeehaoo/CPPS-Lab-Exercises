@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+void main(void)
+{
+	float mass;
+	float radius;
+	float inertia;
+	
+	printf("Enter mass and radius.\n");
+	scanf_s("%f %f", &mass, &radius);
+
+	//inertia = 0.5 * (mass * radius * radius);
+	//printf("The inertia is %.2f\n", inertia);
+
+	printf("The inertia is %.2f\n", inertia = 0.5 * (mass * radius * radius));
+
+}

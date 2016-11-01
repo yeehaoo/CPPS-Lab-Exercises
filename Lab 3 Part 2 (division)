@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+void main(void)
+{
+	int num1;
+	int num2;
+	float num3;
+	printf("Enter numerator(num1)");
+	scanf_s("%d", &num1);
+	
+	printf("Enter interger denominator(num2)");
+	scanf_s("%d", &num2);
+
+	printf("\nnum1 / num2 involves integer division. \n");
+	printf("%d / %d involves integer division with result of %d. \n", num1, num2, (num1 / num2));
+
+	printf("\nEnter decimal denominator(num3)");
+	scanf_s("%f", &num3);
+
+	printf("\nnum1 / num3 will give decimal result after division.\n");
+	printf("%d / %.2f will give decimal result %.2f after division.\n", num1, num3, num1 / num3);
+
+	printf("\nnum1 %% num2 will give the remainder after division.\n");
+	printf("%d %% %d will give remainder %d after division.\n", num1, num2, num1 % num2);
+	
+}

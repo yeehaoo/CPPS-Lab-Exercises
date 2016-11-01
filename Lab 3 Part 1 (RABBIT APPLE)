@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int APPLE = 25;
+float RABBIT = 45.67;
+
+void main(void)
+{
+	printf("Value of constant APPLE is %d\n", APPLE);
+	printf("Value of constant RABBIT is %d\n", RABBIT);
+	printf("Value of constant RABBIT is %.2f\n", RABBIT);
+}
+
