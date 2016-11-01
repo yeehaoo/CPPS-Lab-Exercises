@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+void main(void)
+{
+
+  int age, yearOfBirth;
+  printf("Please enter your year of birth in (yyyy) format.\n");
+  scanf_s("%d", &yearOfBirth);
+  age = 2016 - yearOfBirth - 1;
+  printf("Your age as of 1 Jan 2016 is %d.\n", age);
+ 
+ }
