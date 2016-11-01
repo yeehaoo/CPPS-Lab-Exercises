@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+void main(void)
+
+{
+
+int length, width, perimeter, area;
+printf("Enter length, width in cm\n");
+scanf("%d %d", &length, &width);
+perimeter = (length + width) * 2;
+area = length * width;
+printf("Perimeter = %d and Area = %d\n", perimeter, area);
+
+}
