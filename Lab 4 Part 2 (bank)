@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+void main(void)
+{
+	int num5, num10, num20, num50;
+	int total, deposit, balance;
+	num5 = 100;
+	num10 = 75;
+	num20 = 50;
+	num50 = 25;
+	total = 5 * num5 + 10 * num10 + 20 * num20 + 50 * num50;
+	deposit = total / 100;
+	balance = total % 100;
+	printf("Amount deposited = $%d and unbanked balance = %d cents\n", deposit, balance);
+}
