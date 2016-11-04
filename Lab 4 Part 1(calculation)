@@ -1,0 +1,54 @@
+#include <stdio.h>
+
+
+void main(void)
+{
+	float result;
+	result = (257 + 10 * 2) / 100.0 + 35 % 4;
+	printf("The value of variable result is %.2f\n", result);
+
+}
+
+void main(void)
+
+{
+	int x, y, z, result;
+	x = 450;
+	y = 500;
+	z = 5;
+	result = x / y * z;
+	printf("%d\n", result);
+
+}
+
+void main(void)
+{
+	int x, y;
+	float z, result;
+	x = 50;
+	y = 20;
+	z = 2.5;
+	result = x / y * 2 + z * 3;
+	printf("%.2f\n", result);
+}
+
+void main(void)
+{
+	int x, y, result;
+	float z;
+	x = 50;
+	y = 22;
+	z = 2.0;
+	result = x % y * (2.3 + z);
+	printf("%d\n", result);
+}
+
+void main(void)
+{
+	float result;
+	int result2;
+	result = (200 + 50 / 60) * 50 + 1.75;
+	result2 = result;
+	printf("%.2f\n",result);
+	printf("%d\n", result2);
+}
