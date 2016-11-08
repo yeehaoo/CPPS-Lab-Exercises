@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+void main(void)
+
+{
+	float weight, height, bmi;
+	printf("Please enter your height in metres:\n");
+	scanf_s("%f", &height);
+	printf("Please enter your weight in kg:\n");
+	scanf_s("%f", &weight);
+	bmi = weight / (height * height);
+	if (bmi > 25)
+	{
+		printf("Your weight is at an unhealthy range.\n");
+	}
+	else {
+		printf("Your weight is at a healthy range.\n");
+	}
+}
