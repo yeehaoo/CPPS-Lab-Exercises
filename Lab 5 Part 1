@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+void main(void)
+
+{
+
+	int result;
+	result = (8 >= 8) && (16 / 5 <= 3);
+	printf("%d\n", result);
+
+	int result;
+	result = !(50 > 101 / 2);
+	printf("%d\n", result);
+
+	int result;
+	result = (7 == (60 / 8)) && ((14 % 5) > 3);
+	printf("%d\n", result);
+
+	int result;
+	result = 20;
+	result = (result * 3 / 9 < 5) || (23 / 4 * 4 > 20);
+	printf("%d\n", result);
+
+	int result, x, y;
+	x = 12;
+	y = 5;
+	result = (x != y) && (10 / x > 1);
+	printf("%d\n", result);
+}
+
