@@ -1,0 +1,53 @@
+
+#include <stdio.h>
+
+#define pi 3.142
+
+void main(void)
+{
+	float length, radius, height, volume;
+	char selection;
+
+	printf("(a) A volume of a cube\n");
+	printf("(b) A volume of a cylinder\n");
+	printf("(c) A volume of a sphere\n");
+
+	printf("Please select the function (a,b or c)\n");
+	scanf_s("%c", &selection);
+	fflush(stdin);
+
+	switch (selection) {
+	case'A':
+	case 'a':
+		printf("Please enter the length of the cube\n");
+		scanf_s("%f", &length);
+		volume = length * length * length;
+		printf("The volume of the cube is %.2f\n", volume);
+		break;
+
+	case 'B':
+	case 'b':
+		
+		printf("Please enter the radius of the cylinder\n");
+		scanf_s("%f", &radius);
+		printf("Please enter the height of the cylinder\n");
+		scanf_s("%f", &height);
+		volume = pi*radius * radius*height;
+		printf("The volume of the cylinder is %.2f\n", volume);
+		break;
+
+	case 'C':
+	case 'c':
+		
+		printf("Please enter the radius of the sphere\n");
+		scanf_s("%f", &radius);
+		volume =((radius*radius*radius*4)/3)*pi;
+		printf("The volume of the sphere is %.2f\n", volume);
+		break;
+
+	default: printf("You have made an invalid selection\n");
+	}
+
+
+	
+}
