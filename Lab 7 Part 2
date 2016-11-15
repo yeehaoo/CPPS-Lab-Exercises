@@ -1,0 +1,13 @@
+	#include <stdio.h>
+
+void main(void)
+{
+	int bag, wk;
+	wk = 0;
+	for (bag = 200; bag>=0; bag-=50)
+	{
+		printf("At week %d, number of bags = %d\n", wk, bag);
+		wk = wk + 1;
+
+	}
+}
