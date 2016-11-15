@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+void main(void)
+{
+	int x, m;
+	m = 40;
+	for (x=1;x<=4;x++)
+	{
+		m = m + 10;
+		printf("On day %d, the money is %d\n", x, m);
+	}
+}
