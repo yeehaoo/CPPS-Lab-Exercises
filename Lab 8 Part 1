@@ -6,7 +6,7 @@ void main(void)
 	char grade;
 	total = 0;
 	loopCount = 1;
-	while (loopCount < 5)
+	while (loopCount < 6)	
 	{
 		printf("Please enter mark for question %d\n", loopCount);
 		scanf_s("%d", &mark);
