@@ -16,7 +16,9 @@ void main(void)
 		{
 			printf("You have entered an invalid component mark.\n");
 			printf("The mark must be between 0 and 20; try again.\n");
-			continue;
+			
+			loopCount = 1;
+			total = 0;
 		}
 
 	}
