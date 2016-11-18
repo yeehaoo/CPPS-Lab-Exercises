@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+void main(void)
+{
+	int loopCount, mark, total;
+	char grade;
+	total = 0;
+	loopCount = 1;
+	while (loopCount < 6)
+	{
+		printf("Please enter mark for question %d\n", loopCount);
+		scanf_s("%d", &mark);
+		total = total + mark;
+		loopCount++;
+		if (mark < 0 || mark>20)
+		{
+			printf("You have entered an invalid component mark.\n");
+			printf("The mark must be between 0 and 20; try again.\n");
+			continue;
+		}
+
+	}
+
+	if (total < 50)
+		grade = 'F';
+	else if (total < 60)
+		grade = 'D';
+	else if (total < 70)
+		grade = 'C';
+	else if (total < 80)
+		grade = 'B';
+	else
+		grade = 'A';
+
+	printf("The subject mark is %d and grade is %c\n", total, grade);
+}
