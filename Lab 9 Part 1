@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+void main(void)
+{
+	int x, m;
+	char decide;
+	m = 40;
+	x = 0;
+	decide = 'a';
+
+	do {
+		printf("On day %d, the amount of money is %d.\n", x, m);
+		m += 10;
+		x++;
+		printf("Display another day?\n");
+		scanf_s("%c", &decide);
+		fflush(stdin);
+	} while (decide == 'y');
+} 
