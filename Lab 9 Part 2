@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+void main(void)
+{
+	int number, total, count;
+	number = 0;
+	total = 0;
+	count = 0;
+	printf("Enter maximum of 5 numbers between 10 and 100\n");
+	printf("----------------------------------------------\n");
+	do
+	{
+		printf("Enter number %d (between 10 and 100) or 0 to quit :", count + 1);
+		scanf_s("%d", &number);
+		if (number == 0)
+		{
+			printf("You entered 0, quitting now...\n");
+			break;
+		}
+		if (number < 10 || number >100)
+		{
+			printf("\tNumber entered is invalid...re-enter\n");
+			continue;
+			
+		}
+		total = total + number;
+		count++;
+		printf("Number of entries is %d and total is %d.\n", count, total);
+	} while (count < 5);
+}
