@@ -1,0 +1,60 @@
+#include <stdio.h>
+
+void main(void)
+{
+	char input = 'a';
+	int k;
+	int studMarks[10];
+
+	studMarks[0] = 56;
+	studMarks[1] = 100;
+	studMarks[2] = 89;
+	studMarks[3] = 49;
+	studMarks[4] = 37;
+	studMarks[5] = 78;
+	studMarks[6] = 25;
+	studMarks[7] = 12;
+	studMarks[8] = 67;
+	studMarks[9] = 55;
+
+	printf("The initial marks are");
+	for (k = 0; k < 10; k++)
+	{
+
+		printf("%5d", studMarks[k]);
+	}
+	printf("\n\n");
+
+	do {
+		printf("To use revised values for the 3rd, 6th and 10th marks, enter Y:");
+		scanf_s("%c", &input);
+		fflush(stdin);
+	} while (input != 'Y' && input != 'y');
+	printf("\n");
+
+	studMarks[2] = 39;
+	studMarks[5] = 48;
+	studMarks[9] = 95;
+	printf("The revised marks are");
+	for (k = 0; k < 10; k++)
+		printf("%5d", studMarks[k]);
+	printf("\n\n");
+	printf("To revise marks for the 10 students, enter Y:");
+	do {
+		
+		scanf_s("%c", &input);
+		fflush(stdin);
+	} while (input != 'Y' && input != 'y');
+
+	printf("Enter marks for the 10 students:\n");
+	for (k = 0; k < 10; k++)
+	{
+		printf("New mark for set [%d] :", k);
+		scanf_s("%d", &studMarks[k]);
+	}
+	printf("The new set of marks : ");
+	for (k = 0; k < 10; k++)
+	{
+		printf("%5d", studMarks[k]);
+	}
+}
