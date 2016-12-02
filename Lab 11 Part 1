@@ -1,0 +1,36 @@
+#include <stdio.h>
+extern float compMarks[];
+void main(void)
+{
+	float total=0.0;
+	int k=0;
+	char grade='a';
+	
+	printf("The values in the data file are: \n");
+
+	for (k = 0; k < 7; k++)
+	{
+		printf("%10.2f", compMarks[k]);
+	}
+	printf("\n\n");
+
+	for (k = 0; k < 7; k++)
+	{
+		
+		total += compMarks[k];
+	}
+	printf("%.2f\n", total);
+
+	if (total < 50)
+		grade = 'F';
+	else if (total < 60
+		)grade = 'D';
+	else if (total < 70)
+		grade = 'C';
+	else if (total < 80)
+		grade = 'B';
+	else grade = 'A';
+
+	printf("Overall subject mark = %.1f and grade is %c\n", total, grade);
+
+}
