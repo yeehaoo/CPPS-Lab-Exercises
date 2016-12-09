@@ -1,0 +1,2 @@
+int salesTarget[] = { 10000,8000,6000,12000 };
+int arraySize = sizeof(salesTarget) / sizeof(int);
