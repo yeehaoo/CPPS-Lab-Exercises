@@ -1,0 +1,56 @@
+#include <stdio.h>
+
+extern int salesTarget[];
+extern int arraySize[];
+
+void main(void)
+{
+	int qSales[4];
+	int k = 0;
+	int j = 0;
+
+	int noOfTeams, totalTarget = 0;
+	int totalSales = 0;
+	int lowPerformer = 0;
+
+	for (j = 0; j < arraySize[j]; j++)
+	{
+		totalTarget = totalTarget + salesTarget[j];
+	}
+
+	printf("Please enter the number of sales teams.\n");
+	scanf_s("%d", &noOfTeams);
+
+	for (j = 0; j < noOfTeams; j++)
+	{
+		printf("Enter the 4 quarterly figures for Team %d :\n", j + 1);
+		printf("-----------------------------------------------\n");
+
+		k = 0;
+		do
+		{
+			printf("For quarter %d, sales is $", k + 1);
+			scanf_s("%d", &qSales[k]);
+			totalSales = totalSales + qSales[k];
+			k++;
+		} while (k < 4);
+
+		if (totalSales < totalTarget)
+		{
+			lowPerformer++;
+			printf("The total sales $%d is below target of $%d\n", totalSales, totalTarget);
+			printf("Team %d is a low performer...\n",j+1);
+
+		}
+		else
+		{
+			printf("Team %d has met sales target...\n", j + 1);
+
+		}
+		totalSales = 0;
+		printf("\n");
+
+	
+	}
+	printf("No of low performing teams =%d\n\n", lowPerformer);
+}
