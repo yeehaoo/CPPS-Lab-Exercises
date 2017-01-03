@@ -1,1 +1,34 @@
 
+#include <stdio.h>
+void showMenu();
+void enterMarks();
+void dispMarks();
+
+
+void main(void)
+{
+	char userinput;
+	do{
+		showMenu();
+		scanf_s(" %c", &userinput);
+		fflush(stdin);
+		switch (userinput) {
+		case 'A':
+		case 'a':
+			enterMarks();
+			break;
+
+		case 'B':
+		case 'b':
+			dispMarks();
+			break;
+
+		case 'Q':
+		case 'q':
+			userinput = 'Q';
+			break;
+		default:
+			printf("The user input was invalid. Please input A B or Q.\n");
+		}//switch
+	} while (userinput!='Q');//do
+}//main()
