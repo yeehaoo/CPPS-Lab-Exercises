@@ -1,1 +1,32 @@
 
+#include <stdio.h>
+extern int marks[];
+extern int MAX;
+
+
+void showMenu(void)
+{
+	printf("Please select function A B or Q.\n");
+	printf("(A) Enter marks of the students.\n");
+	printf("(B) Display marks of the students.\n");
+	printf("(Q) Exit students' marks record.\n");
+}//showMenu()
+
+void enterMarks(void)
+{
+	int j = 0;
+	for (j = 0; j < MAX; j++) {
+		printf("Please enter student %d's mark:",j+1);
+		scanf_s("%d", &marks[j]);
+	}//for
+	printf("\n\n");
+}//enterMarks()
+
+void dispMarks(void)
+{
+	int j = 0;
+	for (j = 0; j < MAX; j++) {
+		printf("Student %d's mark is %d.\n", j + 1, marks[j]);
+	}//for
+	printf("\n\n");
+}//dispMarks()
