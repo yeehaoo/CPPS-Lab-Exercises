@@ -29,4 +29,16 @@ Amount of input data
 
 
 Project Analysis
+
+a.What are the data inputs to the problem?
+1. 5 float arrays with 12 inputs each, one array each for the type of HDB housing
+2. averageConsumption
+3. 
+
+b.How are they acquired?
+c.What is the required output data?
+d.How is the required output(s) derived?
+e.How or where is the output presented?
+
+
 Project Design with Flow chart
