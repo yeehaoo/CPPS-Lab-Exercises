@@ -33,7 +33,10 @@ Project Analysis
 a.What are the data inputs to the problem?
 1. 5 float arrays with 12 inputs each, one array each for the type of HDB housing
 2. averageConsumption
-3. 
+3. selectedHousehold
+4. j
+5. totalConsumption
+6. selectedMonth
 
 b.How are they acquired?
 c.What is the required output data?
