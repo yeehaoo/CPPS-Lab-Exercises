@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <conio.h>
 void showMenu();
 void average();
 void waterConsumption();
@@ -12,13 +13,12 @@ void main(void) {
 	do
 	{
 		showMenu();
-		scanf_s(" %c", &menuSelection);
-		fflush(stdin);
+		menuSelection = _getch();
 		switch (menuSelection) {
 		case 'a':
 		case 'A':
 			average();
-			break;
+			break; 
 		case 'b':
 		case 'B':
 			waterConsumption();
@@ -44,7 +44,8 @@ void main(void) {
 			menuSelection = 'Q';
 			break;
 		default:
-			printf("You have selected an invalid function. Please try again.\n");
+			puts("You have entered an invalid selection. Please try again.\n");
+			break;
 		}//switch
 	} while (menuSelection!='Q');//do()
 }//main()
